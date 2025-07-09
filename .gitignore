@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+static/
+local_settings.py
+.env
+
+# Pytest
+.cache/
+htmlcov/
+.coverage
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+
+# MyPy
+.mypy_cache/
+
+# Celery beat schedule file
+celerybeat-schedule
+celerybeat-schedule-*

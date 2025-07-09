@@ -1,0 +1,27 @@
+# Framework
+Django>=5.0,<6.0
+djangorestframework>=3.15.0
+
+# Tarefas Assíncronas
+celery>=5.4.0
+redis>=5.0.0
+
+# Mensageria
+kombu>=5.3.0
+
+# Email opcional (SendGrid ou SMTP local)
+django-celery-results>=2.5.0
+
+# Servidor de produção
+gunicorn>=21.2.0
+
+# Monitoramento
+flower>=2.0.0
+
+# Outras
+python-dotenv>=1.0.1
+setuptools>=68.0.0
+drf-yasg==1.21.7
+whitenoise
+
+
