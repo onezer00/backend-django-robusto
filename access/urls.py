@@ -1,4 +1,5 @@
 from django.urls import path
+
 from .views import (
     ChatAccessRequestCreateView,
     ChatAccessRequestListView,
@@ -6,7 +7,19 @@ from .views import (
 )
 
 urlpatterns = [
-    path('chat-access-request/', ChatAccessRequestCreateView.as_view(), name='chat-access-request'),
-    path('chat-access-request/list/', ChatAccessRequestListView.as_view(), name='chat-access-request-list'),
-    path('chat-access-request/<int:pk>/status/', ChatAccessRequestStatusUpdateView.as_view(), name='chat-access-request-status'),
+    path(
+        "chat-access-request/",
+        ChatAccessRequestCreateView.as_view(),
+        name="chat-access-request",
+    ),
+    path(
+        "chat-access-request/list/",
+        ChatAccessRequestListView.as_view(),
+        name="chat-access-request-list",
+    ),
+    path(
+        "chat-access-request/<int:pk>/status/",
+        ChatAccessRequestStatusUpdateView.as_view(),
+        name="chat-access-request-status",
+    ),
 ]

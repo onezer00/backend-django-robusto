@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class ChatAccessRequest(models.Model):
     nome = models.CharField(max_length=100)
     email = models.EmailField()
@@ -8,11 +9,11 @@ class ChatAccessRequest(models.Model):
     status = models.CharField(
         max_length=20,
         choices=[
-            ('pendente', 'Pendente'),
-            ('aprovado', 'Aprovado'),
-            ('recusado', 'Recusado'),
+            ("pendente", "Pendente"),
+            ("aprovado", "Aprovado"),
+            ("recusado", "Recusado"),
         ],
-        default='pendente'
+        default="pendente",
     )
 
     def __str__(self):

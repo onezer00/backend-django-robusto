@@ -4,3 +4,5 @@ pytest-django
 pytest-mock
 pytest-cov
 pre-commit
+black
+isort

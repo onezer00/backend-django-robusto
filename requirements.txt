@@ -23,5 +23,3 @@ python-dotenv>=1.0.1
 setuptools>=68.0.0
 drf-yasg==1.21.7
 whitenoise
-
-
